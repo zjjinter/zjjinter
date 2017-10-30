@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box1{
+			    width: 980px;
+				height: 28px;
+				margin:auto;
+				line-height: 28px;
+				text-align: right;
+				margin-bottom: 2px;
+				
+		    }
+		    .login{
+		    	height: 17px;
+		    	margin-right: 3px;
+		    	display: inline;
+		    	color: #f00;
+		    	font: normal 12px/24px Helvetica, Tahoma, Arial, sans-serif;
+		    }
+		    .li{
+		    	padding-left:3px ;
+		    	padding-right: 3px;
+		    	color: #000000;
+		    	width: 36px;
+		    	font: normal 12px/24px Helvetica, Tahoma, Arial, sans-serif;
+		    }
+		    .li:active{
+		    	color: #900;
+		    }
+		    .li:hover{
+		    	color: #900;
+		    }
+		    .search {
+                width: 178px;
+                height: 20px;
+                margin: 2px 0 2px 5px;
+                padding: 2px 3px;
+                border: solid 1px #ccc;
+                background: #fff url(//csdnimg.cn/www/images/ico_sear_top.gif) no-repeat 160px 2px;
+                color: #999;
+                line-height: 14px;
+                vertical-align: middle;
+            }
+			.nav{
+				background-color: #c00;
+				list-style: none;
+				width: 980px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.ll{
+				float: left;
+				height: 42px;
+			}
+			.nav_more{
+				width: 30px;
+				float: right;
+                position: relative;
+                z-index: 2000;
+			}
+			a{
+				text-decoration: none;
+				display: inline-block;
+				color: white;
+				font-weight: bold;
+				text-align: center;
+				line-height: 42px;
+				width: 100px;
+			}
+			.ll a:hover{background-color: #900;
+				
+			}
+			.al a:active {color: #900;
+				
+			}
+			.al a:hover {color: #900;
+			
+			}
+			.box2{
+				width: 980px;
+				height: 32px;
+				background-color:#F0F0F0;
+				margin: auto;
+				margin-bottom: 21px;
+			}
+		    .box2 ul{
+				text-align: center;
+                display: table;
+                margin: auto auto;
+                list-style: none;
+			}
+			.box2 li{
+				
+				display: block;
+                float: left;
+                height: 35px;
+                line-height: 35px;
+                padding: 0 4px;
+                color: #000000;
+                font: normal 12px Helvetica, Tahoma, Arial, sans-serif;
+                padding-top:px ;
+			}
+			.box2 ul li a{
+				color:#333333;
+			}
+			.box3{
+				width: 655px;
+				
+				float: left;
+				background-color:white;
+				border-right: 1px solid #DDDDDD;
+			}
+			.box4{
+				width: 300px;
+				float: right;
+			}
+			.box5{
+				
+				height: 511px;
+				padding-bottom:20px ;
+				
+				border-bottom: 1px solid #DDDDDD;	
+			}
+			.box99{
+				width: 380px;
+				height: 511px;
+				float: left;
+			}
+			.box98{
+				width: 250px;
+				height: 479px;
+				float: right;
+				
+				margin-right: 10px;
+			}
+			.box8{
+				width: 380px;
+				height: 342px;
+			}
+			.box9{
+				width: 380px;
+				height: 253px;
+				margin-bottom:7px ;
+			}
+			.p1{
+				width: 364px;
+				height: 72px;
+				margin-bottom: 10px;
+				font-size:xx-large;
+				font-weight: bold;
+			}
+			.p2{
+				width: 380px;
+				height: 73px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #DDDDDD;
+				font-size: large;
+			}
+			.p3{
+				height: 20px;
+				margin-bottom: 10px;
+				margin-top: 5px ;
+				font-weight:600 ;
+			}
+			.p3:hover{
+				color: brown;
+			}
+			.p4:hover{
+				color: darkred;
+			}
+			.p4{
+				height: 57px;
+				border-bottom: 1px dotted #CCCCCC;
+				font-size: larger;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.box20{
+				width: 230px;
+				float: left;
+				margin-top: 14px;
+			}
+			.box21{
+				width: 230px;
+				float: left;
+				margin-top: 14px;
+			}
+			.box21{
+				width: 389px;
+				float: right;
+				margin-right:15px ;
+			
+				
+			}
+			.box32{
+				width: 60px;
+				height: 580px;
+				float: left;
+			}
+			.box33{
+				float: right;
+				height: 580px;
+			}
+			.box30 h2{
+				height: ;
+				font: normal 18px/30px "Microsoft YaHei";
+				border-bottom: 2px #333 solid;
+                margin-bottom: 15px;
+                
+			}
+			.box22 h2{
+				height: ;
+				font: normal 18px/30px "Microsoft YaHei";
+				border-bottom: 2px #333 solid;
+                margin-bottom: 15px;
+                
+			}
+			.cl{
+				height: 60px;
+				margin-bottom: 15px;
+				margin-top: 15px;
+				font-size: larger;
+				text-decoration: none;
+				margin-right: 43px;
+			}
+			.li{
+				text-decoration: none;
+			} 
+			header{
+			width: 980px;
+			height: 100px;
+			margin:auto;
+			padding-left:50px ;
+		    }
+		    .box100{
+		    	width: 980px;
+		    	margin: auto;
+		    }
+		    .box23{
+		    	height: 240px;
+		    	border-bottom: 1px dotted #CCCCCC;
+		    }
+		    .box24{
+		    	height: 650px;
+		    	border-bottom: 1px dotted #CCCCCC;
+		    }
+		    .box24 h3{
+		    	margin-top: 10px;
+		    	height: 30px;
+		    	padding-bottom: 10px;
+		    }
+		    .box40{
+		    	height: 520px;
+		    	border-bottom: 1px dotted #CCCCCC;
+		    }
+		    .box40 h3{
+		    	margin-top: 10px;
+		    	height: 30px;
+		    	padding-bottom: 10px;
+		    }
+		    .box25{
+		    	height: 222px;
+		    	border-bottom: 1px dotted #CCCCCC;
+		    }
+		    .box25 h3{
+		    	margin-top: 10px;
+		    	height: 30px;
+		    	padding-bottom: 10px;
+		    }
+		    .box26{
+		    	
+		    	height: 222px;
+		    	border-bottom: 1px dotted #CCCCCC;
+		    	margin-bottom: 5px;
+		    }
+		    .box27{
+		    	height: 140px;
+		    	margin-bottom: 5px;
+		    	border-bottom: 1px dotted #CCCCCC;
+		    }
+		    .box28{
+		    	height: 170px;
+		    	border-bottom: 1px dotted #CCCCCC;
+		    }
+		    .box37{
+		    	height: 150px;
+		    	border-bottom: 1px dotted #CCCCCC;
+		    	margin-top: 5px;
+		    }
+		    .box29{
+		    	height: 20px;
+		    	border: 1px dotted #CCCCCC;
+		    	background-color: #F8F8F8;
+		    }
+		    .box26 h3{
+		    	margin-top: 10px;
+		    	height: 30px;
+		    	padding-bottom: 10px;
+		    }
+		    .box27 h3{
+		    	margin-top: 10px;
+		    	height: 30px;
+		    	padding-bottom: 10px;
+		    }
+		    .box28 h3{
+		    	margin-top: 10px;
+		    	height: 60px;
+		    	padding-bottom: 10px;
+		    }
+		    .box41{
+		    	width: 300px;
+		    	height: 230px;
+		    
+		    }
+		    .box50{
+		    	width: 300px;
+		    	height: 70px;
+		    	margin-top: 10px;
+		    }
+		    .box51{
+		    	width: 80px;
+		    	padding-top: 18px;
+		    	float: left;
+		    }
+		    .box52{
+		    	width: 220px;
+		    	float: right;
+		    	height: 50px;
+		    	font: normal 12px/24px Helvetica, Tahoma, Arial, sans-serif;
+		    	font-family: 'Microsoft Yahei',"Pingfang SC", Helvetica, 'Hiragino Sans GB', Arial, sans-serif;
+		    }
+		    .box52 a{
+		    	color: #000000;
+		    	
+		    }
+		    .box4 a:hover{
+		    	color: #990000
+		    	
+		    }
+		    .box53{
+		    	width: 300px;
+		    	height: 295px;
+		    	margin-top: 10px;
+		    	border-bottom: 1px solid #CCCCCC;
+		    	margin-bottom: 20px;
+		    }
+		    .box54{
+		    	width: 80px;
+		    	padding-top: 18px;
+		    	float: left;
+		    }
+		    .box55{
+		    	width: 220px;
+		    	float: right;
+		    	height:200px;
+		    	font: normal 12px/24px Helvetica, Tahoma, Arial, sans-serif;
+		    	font-family: 'Microsoft Yahei',"Pingfang SC", Helvetica, 'Hiragino Sans GB', Arial, sans-serif;
+		    }
+		    .box55 a{
+		    	color: #000000;
+		    	
+		    }
+		    .box4 a:hover{
+		    	color: #990000
+		    	
+		    }
+		    .box60{
+		    	margin-top: 10px;
+		    	height: 95px;
+		    	border-bottom: 1px dotted #999999;
+		    }
+		    .box62{
+		    	margin-top: 10px;
+		    	height: 95px;
+		    	border-bottom: 1px dotted #999999;
+		    	background-color: #F0F0F0;
+		    }
+		    .box61{
+		    	margin-top: 10px;
+		    	height: 95px;
+		    	border-bottom: 1px dotted #999999;
+		    	margin-bottom: 20px;
+		    	background-color: #F0F0F0;
+		    }
+		    .box65{
+		    	height: 20px;
+		    	border-bottom: 1px dotted #999999;
+		    }
+		    .box21 h1:hover{
+		    	color: #990000;
+		    }
+		    .box90{
+		    	height: 50px;
+		    	width: 980px;
+		    	margin: 0 auto;
+		    }
+		    footer{
+		    	width:980px;
+		    	margin: 0 auto;
+		    	height: 500px;
+		    }
+		    .box210{
+		    	padding-top: 30px;
+		    	width:980px;
+		    	margin: 0 auto;
+		        height: 200px;
+		        border-top:1px dotted #999999 ;
+		    }
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div class="box1">
+			<span class="login">您还未登录！</span>
+			|
+			<a class="li"href="#">登录</a>
+			|
+			<a class="li"href="#">注册</a>
+			|
+			<a class="li"href="#">帮助</a>
+			
+			<input type="text"name="passwordtwo"
+				class="search" value="搜索"onfocus="if(this.value=='搜索')this.value=‘’；this.style.color='#333';return ture;"onblur="if(this.value=='')this.value='搜索'；this.style.color='#999';return ture;"/>
+		</div>
+		<header>
+			<img src="img/FRRZAIL5VH_ZB9Q88OBPSVN.jpg"width="160px"height="60px" />
+			<h2><pre>奖 助 服 务 部</pre></h2>
+		</header>
+		<ul class="nav">
+			<li class="ll"><a href="#">部门头条</a></li>
+			<li class="ll"><a href="#">部门介绍</a></li>
+			<li class="ll"><a href="#">部门成员</a></li>
+			<li class="ll"><a href="#">部门工作</a></li>
+			<li class="ll"><a href="#">部门培训</a></li>
+			<li class="ll"><a href="#">部门例会</a></li>
+			<li class="ll"><a href="#">部门活动</a></li>
+			<li class="ll"><a href="#">素质拓展</a></li>
+			<li class="ll"><a href="#">反馈留言</a></li>
+			<li class="nav_more">
+				<div class="nav_more_list" style="display: none;">
+					<a class="arrow"></a>
+					<ul class="clearfix">
+						<li>
+							<h4>成员生日</h4>
+							<a href="#">图片</a>
+							<a href="#">视频</a>
+							<a href="#">祝福</a>
+							<a href="#">部长生日</a>
+							<a href="#">小干事孟生日</a>
+							<a href="#">小干事雷生日</a>
+							<a href="#">小干事王生日</a>
+							<a href="#">小干事龙生日</a>
+							
+						</li>
+						<li>
+							<h4>社区</h4>
+							<a href="#">论坛</a>
+							<a href="#">博客</a>
+							<a href="#">问答</a>
+							<a href="#">搜索</a>
+							<a href="#">下载</a>
+						</li>
+						<li>
+							<h4>服务</h4>
+							<a href="#">奖学金</a>
+							<a href="#">助学金</a>
+						</li>
+						<li style="width: 100px;margin-right: -100px;">
+							<h4>所属</h4>
+							<a href="#">湘潭大学</a>
+							<a href="#">信息工程学院</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<div class="box2">
+			<ul class>
+				<li class="al"><a href="#">奖学金</a></li>
+			    <li class="al"><a href="#">助学金</a></li>
+			    <li class="al"><a href="#">论坛</a></li>
+			    <li class="al"><a href="#">博客</a></li>
+			    <li class="al"><a href="#">问答</a></li>
+			    <li class="al"><a href="#">搜索</a></li>
+			    <li class="al"><a href="#">下载</a></li>
+			    <li class="al"><a href="#">图片</a></li>
+				<li class="al"><a href="#">视频</a></li>						
+			</ul>
+		</div>
+		<div class="box100">
+			<div class="box3">
+			    <div class="box5">
+			    	<div class="box99">
+			    		<div class="box7">
+			    		<div class="box8">
+			    			<div class="box9">
+			    				<img src="img/IMG_20171028_125824.jpg"width="100%" height="100%"/>
+			    			</div>
+			    			<p class="p1">2017年10月25日星期三，部门小干事过生日！</p>
+			    		</div>
+			    		<p class="p2">星期三晚9点，我们奖助部全体成员在一田给龙小干事过了她今年的生日。之后我们一起玩游戏，玩非常开心！</p>
+			    	    </div>
+			    	    <p class="p3">2107年奖学金助学金开始申报</p>
+			    	    <p class="p3">学工办的地理位置在哪啊？</p>
+			    	    <p class="p3">小干事晚上工作要加班的。</p>
+			    	</div>
+			    	<div class="box98">
+			    		<p class="p4">【必看】奖学金、助学金的区别有哪些？</p>
+			    		<p class="p4">奖学金、助学金的种类有哪些？</p>
+			    		<p class="p4">奖学金、助学金的申报资格有哪些？</p>
+			    		<p class="p4">需要递交的材料有哪些？</p>
+			    		<p class="p4">奖助部的地理位置在哪啊？</p>
+			    		<p class="p4">奖助部只有信工院有吗？</p>
+			    		<p class="p4">奖助部的负责老师是谁啊？</p>
+			    	</div>
+			    </div>
+			    <div class="box6">
+			    	<div class="box20">
+			    		<div class="box30">
+			    			<h2 style="color: #CC0000;">部门头条</h2>
+			    		</div>
+			    		<div class="box31">
+			    			<div class="box32">
+			    				<img src="img/QQ图片20171028151451.png"width="100%"height="100%" />
+			    			</div>
+			    			<div class="box33">
+			    				<ul>
+			    				    <li class="cl">部长生日</li>
+			    				    <li class="cl">小干事孟生日</li>
+			    				    <li class="cl">小干事雷生日</li>
+			    				    <li class="cl">小干事王生日</li>
+			    				    <li class="cl">小干事龙生日</li>
+			    				    <li class="cl">工作牌授予仪式</li>
+			    				    <li class="cl">周六例会</li>
+			    				    <li class="cl">素质拓展</li>
+			    			    </ul>
+			    			</div>
+			    			<div class="box30">
+			    			<h2 style="color: #CC0000;">专题</h2>
+			    			<div class="box26">
+			    			    <h3>工作牌授予仪式</h3>
+			    			    <img src="img/QQ图片20171028233025.jpg"width="100%"height="150px" />
+			    		    </div>
+			    		    <div class="box25">
+			    			    <h3>素质拓展</h3>
+			    			    <img src="img/QQ图片20171028232744.jpg"width="100%"height="150px" />
+			    		    </div>
+			    			</div>
+			    			<div class="box30">
+			    			    <h2 style="color: #CC0000;">推荐博客</h2>
+			    		    </div>
+			    			<div class="box35">
+			    				<img src="img/QQ图片20171029162646.png"width="100%" />
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<div class="box21">
+			    		<div class="box22">
+			    			<h2 style="color: #CC0000;">滚动</h2>
+			    		</div>
+			    		<div class="box23">
+			    			<h3>第十九届奖助</h3>
+			    		    <img src="img/IMG_20171022_234259.jpg"width="390px"height="200px" />
+			    		</div>
+			    		<div class="box27">
+			    			<h3>奖助服务部的简单介绍</h3>
+			    			<h4>我们部门主要协助老师完成我院各类奖学金与助学金及贫困生入库等材料的收集、整理、进行网上申报、负责已毕业贫困生贷款的催缴工作，并协助老师完成学工办的日常工作。</h4>
+			    		</div>
+			    		<div class="box28">
+			    			<h3>我们十九届团委十九届奖学金助学金服务部的这个大家庭</h3>
+			    			<h4>我们部门是一个特别注重感情，特别注重部门之间的团结与合作。我们无论是玩游戏还是在工作，都是全身心地投入进去。我们十九届正迎着朝阳走向新的明天。</h4>
+			    		</div>
+			    		<div class="box29"></div>
+			    		<div class="box37">
+			    			<h3>我们奖助部的成员</h3>
+			    			<h4>分管主席——秦婷、正部长——周柳江、副部长——张睿、副部长——张带凤、副部长——雷文鑫。</h4>
+			    			<h4>小干事——李燕琴、吴群群、李卓、梁明杨、孟唯平、雷泽峰、陈金星、罗云飞、龙思慧、吴梓欣、朱静晶</h4>
+			    		</div>
+			    		<div class="box27">
+			    			<h3>奖助服务部的简单介绍</h3>
+			    			<h4>我们部门主要协助老师完成我院各类奖学金与助学金及贫困生入库等材料的收集、整理、进行网上申报、负责已毕业贫困生贷款的催缴工作，并协助老师完成学工办的日常工作。</h4>
+			    		</div>
+			    		<div class="box28">
+			    			<h3>我们十九届团委十九届奖学金助学金服务部的这个大家庭</h3>
+			    			<h4>我们部门是一个特别注重感情，特别注重部门之间的团结与合作。我们无论是玩游戏还是在工作，都是全身心地投入进去。我们十九届正迎着朝阳走向新的明天。</h4>
+			    		</div>
+			    		
+			    		<div class="box29"></div>
+			    		
+			    		<div class="box24">
+			    			<h3>部长生日</h3>
+			    			<img src="img/QQ图片20171028232030.jpg"width="390px"height="600px" />
+			    		</div>
+			    		<div class="box40">
+			    			<h3>小干事孟生日</h3>
+			    			<img src="img/IMG20170915214224.jpg"width="390px"height="450px" />
+			    		</div>
+			    		<div class="box40">
+			    			<h3>小干事雷生日</h3>
+			    			<img src="img/IMG20170929200536.jpg"width="390px"height="450px" />
+			    		</div>
+			    		<h1 align="center">查看更多信息</h1>
+			    	</div>
+			    </div>
+		    </div>
+		    <div class="box4">
+		    	<div class="box41"></div>
+		    	<div class="box22">
+			    	<h2 style="color: #CC0000;">快速入口</h2>
+			    </div>
+			    <div class="box50">
+			    	<div class="box51">
+			    		<h4>推荐频道:</h4>
+			    	</div>
+			    	<div class="box52">
+			    		<a href="#">湘潭大学官网</a>
+			    		<a href="#">湘潭大学信息门户</a>
+			    		<a href="#">湘潭大学信息工程</a>
+			    	</div>
+			    	
+			    </div>
+			    <div class="box50">
+			    	<div class="box51">
+			    		<h4>推荐服务:</h4>
+			    	</div>
+			    	<div class="box52">
+			    		<a href="#">湘大奖学金</a>
+			    		<a href="#">湘大助学金</a>
+			    		<a href="#">湘大奖助部</a>
+			    	</div>
+			    	
+			    </div>
+			    <div class="box53">
+			    	<div class="box54">
+			    		<h4>推荐专区:</h4>
+			    	</div>
+			    	<div class="box55">
+			    		<a href="#">湘大信工院</a>
+			    		<a href="#">湘大商学院</a>
+			    		<a href="#">湘大化学院</a>
+			    		<a href="#">湘大化工院</a>
+			    		<a href="#">湘大公管院</a>
+			    		<a href="#">湘大机械院</a>
+			    		<a href="#">湘大材科院</a>
+			    		<a href="#">湘大物理光电院</a>
+			    		<a href="#">湘大环境与资源院</a>
+			    		<a href="#">湘大哲学系</a>
+			    		<a href="#">湘大历史系</a>
+			    		<a href="#">湘大艺术学院</a>
+			    		<a href="#">湘大国际交流学院</a>
+			    		<a href="#">...</a>
+			    	</div>
+			    	
+			    </div>
+			    <div class="box22">
+			    	<h2 style="color: #CC0000;">活动日历</h2>
+			    	
+			    </div>
+			    <div class="box60">
+			    	<h3><pre>2017/10/21    培训</pre></h3>
+			    	<h3><pre>   </pre> </h3>
+			    	<h3>奖助部第一次培训，大家都学到很多东西。</h3>
+			    </div>
+			    <div class="box62">
+			    	<h3><pre>2017/10/22    定向越野</pre></h3>
+			    	<h3><pre>   </pre> </h3>
+			    	<h3>奖助部团结合作把属于我们的工作做得很好。</h3>
+			    </div>
+			    <div class="box60">
+			    	<h3><pre>2017/10/25    生日</pre></h3>
+			    	<h3><pre>   </pre> </h3>
+			    	<h3>小干事龙思慧生日，我们一起为她送上祝福。</h3>
+			    </div>
+			    <div class="box61">
+			    	<h3><pre>2017/10/28    例会</pre></h3>
+			    	<h3><pre>   </pre> </h3>
+			    	<h3>每周六的例会到了，大家依次总结。</h3>
+			    </div>
+			    <div class="box22">
+			    	<h2 style="color: #CC0000;">奖助热点</h2>
+			    	
+			    </div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box22">
+			    	<h2 style="color: #CC0000;">推荐课堂</h2>
+			    	
+			    </div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box22">
+			    	<h2 style="color: #CC0000;">会议记录</h2>
+			    	
+			    </div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+			    <div class="box65"></div>
+		    </div>
+		    
+		</div>
+		<div class="90"></div>
+		<footer>
+			
+			<img  src="img/QQ图片20171029180231.png" height="50px"width="700px">
+			<h3>感受奖助的服务</h3>
+			<img  src="img/QQ图片20171029185235.png" height="50px"width="700px">
+		    <div class="box210">
+			    <h2 align="center">博学笃行，盛德日新！</h2>
+			    <h1><pre>     </pre></h1>
+			    <h3 align="center">QQ:123456789</h3>
+			    <h1><pre>     </pre></h1>
+			    <h3 align="center">Tel:12345678901</h3>
+			    <h1><pre>     </pre></h1>
+		    </div>
+		</footer>
+		
+	</body>
+</html>
